@@ -41,6 +41,7 @@ all: $(KERNEL_ELF)
 clean:
 	rm -rf $(KERNEL_ELF) $(OBJ) $(HEADER_DEPS)
 
+# TODO instead of having the header from master branch, freeze the version.
 ../include/stivale2.h:
 	curl https://raw.githubusercontent.com/stivale/stivale/master/stivale2.h -o $@
 
